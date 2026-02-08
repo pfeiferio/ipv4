@@ -9,7 +9,8 @@ export {IPv4Network} from './IPv4Network.js'
 export {
   ipToInt,
   intToIp,
-  getNetworkAddress
+  getNetworkAddress,
+  getCommonPrefixLength
 } from './utils.js'
 
 // types
