@@ -1,0 +1,58 @@
+{
+  "name": "@pfeiferio/ipv4",
+  "version": "1.0.2",
+  "description": "A strict, well-tested IPv4 address and network utility library for Node.js",
+  "license": "MIT",
+  "author": "Pascal Pfeifer <pascal@pfeifer.zone>",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "ipv4",
+    "network",
+    "cidr",
+    "subnet",
+    "ip",
+    "networking",
+    "nodejs",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfeiferio/ipv4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pfeiferio/ipv4/issues"
+  },
+  "homepage": "https://github.com/pfeiferio/ipv4#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "test:coverage": "npm run build && node --test --experimental-test-coverage",
+    "test:watch": "node --test --watch",
+    "prepublishOnly": "npm run clean && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.9",
+    "typescript": "^5.9.3"
+  }
+}
