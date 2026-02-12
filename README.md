@@ -5,6 +5,7 @@
 ![license](https://img.shields.io/npm/l/@pfeiferio/ipv4)
 ![downloads](https://img.shields.io/npm/dm/@pfeiferio/ipv4)
 ![node](https://img.shields.io/node/v/@pfeiferio/ipv4)
+[![codecov](https://codecov.io/gh/pfeiferio/ipv4/branch/main/graph/badge.svg)](https://codecov.io/gh/pfeiferio/ipv4)
 
 Strict and well-tested IPv4 address and network utilities for Node.js.
 
